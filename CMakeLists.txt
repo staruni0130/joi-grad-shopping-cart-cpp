@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project(joi_grad_shopping_cart_cpp)
 
+if (EXISTS ${CMAKE_BINARY_DIR}/conan_paths.cmake)
+    include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
+endif ()
 set(CMAKE_CXX_STANDARD 11)
 aux_source_directory(src EXE_SOURCES)
 list(FILTER EXE_SOURCES INCLUDE REGEX "^.*.cc$")
