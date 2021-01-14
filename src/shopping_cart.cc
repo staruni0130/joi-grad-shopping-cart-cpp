@@ -1,4 +1,5 @@
 #include "../include/shopping_cart.h"
+#include <algorithm>
 
 Order ShoppingCart::Checkout() {
     double total_price = 0;
