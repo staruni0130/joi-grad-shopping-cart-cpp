@@ -46,6 +46,7 @@ TEST_F(ShoppingCartTest, should_calculate_price_for_10_percent_discount) {
     EXPECT_DOUBLE_EQ(90.0, order.GetTotalPrice());
 }
 
+
 TEST_F(ShoppingCartTest, should_calculate_loyalty_points_for_10_percent_discount) {
     std::vector<Product> products{
             {static_cast<double>(kPrice), "DIS_10_ABCD", kProduct}
